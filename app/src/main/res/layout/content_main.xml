@@ -16,34 +16,37 @@
 
 <ImageView
     android:layout_width="match_parent"
-    android:layout_height="220px"
-    android:background="#ffd4d4"/>
+    android:layout_height="100dp"
+    android:background="#ffd4d4"
+    android:contentDescription="@string/pinkbar" />
+
  <ImageView
         android:layout_width="match_parent"
-        android:layout_marginTop="200px"
-        android:layout_height="900px"
-        android:background="#ffffff"/>
+        android:layout_marginTop="100dp"
+        android:layout_height="900dp"
+        android:background="#ffffff"
+        android:contentDescription="@string/whitebar" />
 
     <Button
-        android:layout_width="100px"
-        android:layout_marginTop="20px"
+        android:layout_width="55dp"
+        android:layout_marginTop="15dp"
 
         android:layout_height="wrap_content"
         android:background="@drawable/custom_on_button"
-        android:padding="25px"
-        android:drawableLeft="@drawable/search"
+        android:padding="15dp"
+        android:drawableStart="@drawable/search"
         android:onClick="Search"
         android:id="@+id/search"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:layout_width="100px"
+        android:layout_width="55dp"
         android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/toggleoff"
+        android:drawableStart="@drawable/toggleoff"
         android:background="@drawable/custom_on_button"
-        android:padding="25px"
-        android:layout_marginTop="20px"
+        android:padding="15dp"
+        android:layout_marginTop="15dp"
 
         android:id="@+id/off"
         android:onClick="turnOff"
@@ -53,12 +56,12 @@
         android:layout_marginEnd="49dp" />
 
     <Button
-        android:layout_width="100px"
+        android:layout_width="55dp"
         android:layout_height="wrap_content"
-        android:padding="25px"
-        android:layout_marginTop="20px"
+        android:padding="15dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/custom_on_button"
-        android:drawableLeft="@drawable/toggleon"
+        android:drawableStart="@drawable/toggleon"
         android:onClick="turnOn"
         android:id="@+id/on"
         android:layout_marginStart="47dp"
@@ -66,22 +69,22 @@
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:text="ON"
+        android:text="@string/on"
         android:textColor="#000000"
 
         android:textStyle="bold"
         android:layout_width="match_parent"
-        android:paddingLeft="123px"
+        android:paddingStart="65dp"
+        android:paddingEnd="10dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/on"
         android:layout_alignEnd="@+id/on"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="13dp"
         android:id="@+id/textView" />
 
     <TextView
-        android:text="SEARCH"
+        android:text="@string/search1"
         android:textColor="#000000"
-
         android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -90,11 +93,12 @@
         android:id="@+id/textView2" />
 
     <TextView
-        android:text="OFF"
+        android:text="@string/off"
         android:textColor="#000000"
 
         android:textStyle="bold"
-        android:paddingLeft="28px"
+        android:paddingStart="18dp"
+        android:paddingEnd="3dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textView2"
@@ -107,22 +111,24 @@
         android:id="@+id/myList"
         android:textColor="#000000"
         android:clickable="true"
-        android:paddingLeft="5px"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
         android:layout_below="@+id/textView"
         android:layout_marginTop="50dp"
         android:layout_alignStart="@+id/textView4" />
 
     <ImageView
         android:src="@android:drawable/divider_horizontal_dark"
-        android:layout_width="710px"
-        android:layout_marginTop="200px"
-        android:layout_height="6px"
+        android:layout_width="710dp"
+        android:layout_marginTop="100dp"
+        android:layout_height="3dp"
         android:background="#000000"
 
-        android:id="@+id/imageView" />
+        android:id="@+id/imageView"
+        android:contentDescription="@string/dividingline" />
 
     <TextView
-        android:text="Devices:"
+        android:text="@string/devices"
         android:textColor="#000000"
 
         android:textStyle="bold"
@@ -138,20 +144,23 @@
 
     <ImageView
         android:src="@android:drawable/alert_light_frame"
-        android:layout_marginTop="157px"
-        android:layout_marginLeft="170px"
+        android:layout_marginTop="87dp"
+        android:layout_marginStart="90dp"
         android:background="#00FF00"
-        android:layout_width="20px"
+        android:layout_width="8dp"
         android:id="@+id/green"
         android:visibility="invisible"
-        android:layout_height="23px" />
+        android:layout_height="10dp"
+        android:contentDescription="@string/redLight" />
+
     <ImageView
         android:src="@android:drawable/alert_light_frame"
-        android:layout_marginTop="157px"
-        android:layout_marginLeft="540px"
+        android:layout_marginTop="87dp"
+        android:layout_marginStart="275dp"
         android:background="#FF0000"
         android:id="@+id/red"
         android:visibility="invisible"
-        android:layout_width="20px"
-        android:layout_height="23px" />
+        android:layout_width="8dp"
+        android:layout_height="10dp"
+        android:contentDescription="@string/greenLight" />
 </RelativeLayout>

@@ -5,4 +5,13 @@
     <string name="turn_on">Turn On</string>
     <string name="turn_off">Turn off</string>
     <string name="title_activity_graph">graph</string>
+    <string name="on">ON</string>
+    <string name="search1">SEARCH</string>
+    <string name="off">OFF</string>
+    <string name="dividingline">DividingLine</string>
+    <string name="devices">Devices:</string>
+    <string name="redLight" />
+    <string name="greenLight" />
+    <string name="pinkbar">pinkBar</string>
+    <string name="whitebar">WhiteBar</string>
 </resources>
